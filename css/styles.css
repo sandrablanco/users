@@ -58,21 +58,53 @@ h1 {
 }
 
 #listaUsuarios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     list-style: none;
+    justify-content: center;
     padding: 0;
-    max-width: 900px;
-    margin: auto;
+    height: 40px;
+    width: 40px;
+    ;
 }
+
+.tarjeta {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 250px;
+    height: 100px;
+
+}
+
+.foto {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.usuario .datos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 
 .usuario {
     background: #fff;
     padding: 20px;
+    margin: 10px;
     margin-bottom: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     display: flex;
     gap: 20px;
     align-items: flex-start;
+    width: 300px;
+    min-height: 160px;
 }
 
 .usuario img {
@@ -87,6 +119,10 @@ h1 {
     color: #333;
 }
 
-.usuario p {
+.usuario p strong {
+    color: #333;
     margin: 4px 0;
+    font-size: 14px;
+    margin-left: 0;
 }
+
